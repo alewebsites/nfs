@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+
+
+
+/***************DEFAULTS*****************/
+
+:root {
+  --yellow:rgb(255, 187, 0);
+
+  --ff-titles: "Anton SC", sans-serif;
+  --ff-text: Verdana, Geneva, Tahoma, sans-serif;
+ 
+  --borders-one: 4px;
+  --borders-two: 8px;
+  --borders-three: 16px;
+  --borders-four: 32px;
+  --borders-five: 64px;
+
+  --space-btw: 8rem;
+
+  --roboto700: 700;
+  --roboto400: 400;
+  --roboto300: 300;
+
+  --fs-xxl: clamp(3rem, 6vw + 1rem, 12rem);
+  --fs-xl: clamp(3rem, 4vw + 1rem, 10rem);
+  --fs-xs: clamp(1rem, 1vw + 1rem, 6rem);
+  --fs-s: clamp(1rem, 1vw + 1rem, 2rem);
+  --fs-titles: 2rem;
+  --fs-sub-tittles: 1.6rem;
+  --fs-highlights: 1.2rem;
+  --fs-text: 1.1rem;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  font-family: var(--ff-text);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: var(--roboto400);
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #808080; 
+  border-radius: 4px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--red-one); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--red-three); 
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body, html {
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  background-color: #fffbeb;
+  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+}
+h1, h2, h3, h4, h5, h6 {
+  /* color: var(--black); */
+}
+
+
+
+/***************KEYFRAMES****************/
+
+
+
+/***************************************/
+
+
+
+/*************MEDIAQUERIES**************/
+
+@media (max-width: 1483px) {
+
+}
+
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 1150px) {
+
+}
+
+@media (max-width: 950px) {/*2 REM padding*/
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) { /*1 REM padding*/
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 455px) {
+
+}
+
+@media (max-width: 350px) {
+
+}
+
+/**************************************/
