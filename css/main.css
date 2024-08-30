@@ -1,15 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 
 /***************DEFAULTS*****************/
 
 :root {
-  --yellow:rgb(255, 187, 0);
+  /* --red:#B31942; */
+  /* --blue:#0A3161; */
 
-  --ff-titles: "Anton SC", sans-serif;
-  --ff-text: Verdana, Geneva, Tahoma, sans-serif;
+  --red:#CC0101;
+  --red-dark:#7D0000;
+  --blue:#1c3167;
+  --blue-dark:#031031;
+  --gold:#facb30;
+  --gold-dark:#AC8400;
+  --grey:#f2f2f2;
+  --grey-dark:#e6e6e6;
+
+
+  --ff-titles: "Jost", sans-serif;
+  --ff-text: Helvetica, sans-serif;
  
   --borders-one: 4px;
   --borders-two: 8px;
@@ -90,13 +100,49 @@ body, html {
   margin: 0;
   overflow-x: hidden;
   padding: 0;
-  background-color: #fffbeb;
-  background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
-}
-h1, h2, h3, h4, h5, h6 {
-  /* color: var(--black); */
+  color:#262626;
+  background: var(--grey-dark);
+  
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-titles);
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+
+.under__wrap{
+  width: 120px;
+  height: 6px;
+  border: 1px solid #f2f2f2;
+  background: grey;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.under__center{
+  margin: 0 auto 1rem auto;
+}
+
+.under__red{
+  width: 40px;
+  height: 100%;
+  background: var(--blue-dark);
+}
+.under__white{
+  width: 40px;
+  height: 100%;
+  background: white;
+}
+.under__blue{
+  width: 40px;
+  height: 100%;
+  background: var(--red);
+}
 
 
 /***************KEYFRAMES****************/
@@ -109,40 +155,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /*************MEDIAQUERIES**************/
 
-@media (max-width: 1483px) {
-
-}
-
-@media (max-width: 1280px) {
-
-}
-
-@media (max-width: 1150px) {
-
-}
-
-@media (max-width: 950px) {/*2 REM padding*/
-
-}
-
-@media (max-width: 768px) {
-
-}
+@media (max-width: 1483px) { }
+@media (max-width: 1280px) { }
+@media (max-width: 1150px) { }
+@media (max-width: 950px) {/*2 REM padding*/}
+@media (max-width: 768px) { }
 
 @media (max-width: 576px) { /*1 REM padding*/
-
+  .under__centerTwo{
+    margin: 0 auto 1rem auto;
+  }
 }
 
-@media (max-width: 480px) {
-
-}
-
-@media (max-width: 455px) {
-
-}
-
-@media (max-width: 350px) {
-
-}
+@media (max-width: 480px) { }
+@media (max-width: 455px) { }
+@media (max-width: 350px) { }
 
 /**************************************/

@@ -1,0 +1,126 @@
+.four__wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 0 5rem;
+}
+.four__image-container{
+    width: 50%;
+}
+.four__image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.four__form-container{
+    width: 50%;
+    background: white;
+    padding: 2rem;
+}
+.four__form-container h2{
+    font-family: var(--ff-titles);
+    font-weight: 600;
+    font-size: var(--fs-xs);
+    margin-bottom: 0.5rem;
+}
+.four__form-container p{
+    font-size: 0.9rem;
+    color: rgb(59, 59, 59);
+}
+.footer__form{
+    background: var(--blue-dark);
+    border-radius: 8px;
+    width: 100%;
+    margin: 2rem auto 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer__form label{
+    color: white;
+    font-family: var(--ff-titles);
+    font-size: 1rem;
+}
+.form__row{
+    display: flex;
+    flex-direction: column;
+}
+.form__row input{
+    padding: 0.5rem;
+    border-radius: var(--borders-one);
+    width: 100%;
+}
+.form__row select{
+    padding: 0.5rem;
+    border-radius: var(--borders-one);
+}
+.form__row textarea{
+    padding: 0.5rem;
+    border-radius: var(--borders-one);
+    resize: none;
+}
+.form__buttom{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+.footer__sendButton{
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: var(--borders-one);
+    background: var(--gold);
+}
+.footer__sendButton:hover{
+    background: var(--red);
+    cursor: pointer;
+    color: white;
+}
+
+
+/*************MEDIAQUERIES**************/
+
+@media (max-width: 1483px) { }
+@media (max-width: 1280px) { }
+@media (max-width: 1150px) { }
+
+@media (max-width: 950px) {/*2 REM padding*/
+    .four__wrapper{
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .four__image-container{
+        width: 100%;
+    }
+    .four__form-container{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) { }
+
+@media (max-width: 576px) { /*1 REM padding*/
+    .four__form-container{       
+        padding: 1rem 0 0 0;
+    }
+    .four__form-container h2{
+        text-align: center;
+        padding: 0 1rem;
+    }    
+    .four__form-container p{
+        text-align: center;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer__form{
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 455px) { }
+@media (max-width: 350px) { }
+
+/**************************************/
